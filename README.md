@@ -7,6 +7,7 @@
 > 近期有一个接入了SSO的项目需要从python flask换成go-gin，因为是个长期的过程，需要一部分一部分进行迁移，同时以前的python后端也是在线的。比较麻烦的地方在SSO相关的功能是原python后端提供的，而flask写到session里的信息是使用`app.secret_key`加密过的，所以golang 的project需要能支持解析python的后端在session中加密过的数据。
 
 ### project structure
+```
 .
 ├── Makefile
 ├── README.md
@@ -30,3 +31,4 @@
 └── server
     ├── router.go
     └── server.go
+```
