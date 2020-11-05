@@ -1,0 +1,6 @@
+server:
+  port: 127.0.0.1:9300
+
+db:
+  uri: root:@(localhost:3306)/testdb?charset=utf8
+  redis: localhost:6379
